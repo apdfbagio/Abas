@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         smartTabLayout=findViewById(R.id.viewPagerTab);
         viewPager=findViewById(R.id.viewPager);
+
+        getSupportActionBar().setElevation(0);
 //conf adapter p as abas
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(),
@@ -36,5 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.setAdapter(adapter);
         smartTabLayout.setViewPager(viewPager);
+
+
     }
 }
